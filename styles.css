@@ -1,0 +1,13 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+} 
