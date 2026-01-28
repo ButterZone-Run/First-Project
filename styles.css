@@ -3,8 +3,19 @@ body {
 }
 
 main {
-    width: 1440px;
+    width: 720px;
     background-color: whitesmoke;
     border: 1px solid white;
     border-radius: 10px;
+    margin: 50px auto;
+}
+
+img {
+    width: 630px;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
 }
