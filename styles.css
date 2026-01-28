@@ -3,7 +3,8 @@ body {
 }
 
 main {
-    width: 375px;
+    width: 1440px;
+    background-color: whitesmoke;
     border: 1px solid white;
     border-radius: 10px;
 }
