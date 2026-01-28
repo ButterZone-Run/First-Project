@@ -6,14 +6,15 @@ main {
     width: 720px;
     background-color: whitesmoke;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 50px auto;
 }
 
 img {
     width: 630px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 30px auto;
+    display: block;
 }
 
 h1 {
