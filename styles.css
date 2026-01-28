@@ -1,13 +1,7 @@
 body {
-    background-color: bisque;
+    background-color: hsl(30, 54%, 90%);
 }
 
-h1 {
-    text-transform: uppercase;
-    font-weight: 600;
+main {
+    width: 375px;
 }
-
-p {
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-} 
