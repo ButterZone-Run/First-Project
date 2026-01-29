@@ -32,6 +32,7 @@ h1 {
 
 p {
     padding-left: 35px;
+    padding-right: 35px;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -58,13 +59,13 @@ p {
 }
 
 .prep-time span {
-    padding-left: 30px;
+    padding-left: 25px;
     color: hsl(30, 10%, 34%);
     font-weight: 600;
 }
 
 .prep-time li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -80,7 +81,7 @@ h2 {
     margin-left: 30px;
 }
 
-.instruction {
+.instructions {
     margin-left: 30px;
 }
 
@@ -93,21 +94,28 @@ h2 {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-left: 15px;
 }
 
-.instruction li {
+.instructions li {
     color: hsl(30, 10%, 34%);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nutrition td {
    color: hsl(30, 10%, 34%);
    font-family: "Outfit", sans-serif;
    font-optical-sizing: auto;
-   font-style: normal; 
+   font-style: normal;
+   border-bottom: 1px solid hsl(30, 10%, 34%); 
 }
 
+.nutrition span {
+    color: hsl(14, 45%, 36%);
+}
