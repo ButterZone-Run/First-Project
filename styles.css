@@ -56,6 +56,8 @@ p {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding-left: 15px;
+    font-weight: 600;
 }
 
 .prep-time span {
@@ -68,8 +70,8 @@ p {
     margin-bottom: 15px;
 }
 
-h2 {
-    margin-left: 35px;
+h2:not(.prep-time h2) {
+    margin-left: 45px;
     font-family: "Young Serif", serif;
     font-style: normal;
     font-weight: 500;
@@ -78,13 +80,17 @@ h2 {
 }
 
 .ingredients {
-    margin-left: 30px;
-    border-bottom: 1px solid hsl(30, 10%, 34%);
-    padding: 0 35px;
+    margin-left: 20px;
+    border-bottom: 1px solid hsl(30, 10%, 34%, 0.3);
+    width: 90%;
+    padding-bottom: 20px;
 }
 
 .instructions {
-    margin-left: 30px;
+    margin-left: 20px;
+    width: 90%;
+    border-bottom: 1px solid hsl(30, 10%, 34%, 0.3);
+    padding-bottom: 20px;
 }
 
 .nutrition {
@@ -98,7 +104,6 @@ h2 {
     font-optical-sizing: auto;
     font-style: normal;
     margin-bottom: 15px;
-    padding-left: 15px;
 }
 
 .instructions li {
@@ -107,8 +112,6 @@ h2 {
     font-optical-sizing: auto;
     font-style: normal;
     margin-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .instructions span {
@@ -118,11 +121,14 @@ h2 {
 
 
 table {
-  width: 100%;
+  width: 85%;
+  margin-left: 35px;
+  border: 0;
+  border-collapse: collapse;
 }
 
 tbody {
-    width: 100%;
+    width: 90%;
     margin: 0 35px;
 }
 
@@ -132,15 +138,12 @@ td {
    font-optical-sizing: auto;
    font-style: normal;
    width: 50%;
-   padding: 15px 0;
-   border: 1px solid red;
+   padding: 15px 30px
 }
 
 tr span {
     color: hsl(14, 45%, 36%);
-    font-weight: 600;  
-    margin-left: 300px;
-    text-align: left;
+    font-weight: 700; 
 }
 
 th {
@@ -149,9 +152,10 @@ th {
     font-optical-sizing: auto;
     font-style: normal;
     width: 50%;
-    margin-left: 30px;
     padding: 15px 0;
-    border: 1px solid red;
+    text-align: left;
+    padding-left: 32px;
+    font-weight: 500;
 }
 
 caption {
@@ -159,9 +163,28 @@ caption {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 40px auto;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 tr[class="border"] {
-    border-bottom: 1px solid hsl(30, 10%, 34%);
+    border-bottom: 1px solid hsla(30, 10%, 34%, 0.3);
+}
+
+ul:not(.prep-time), ol {
+    list-style-type: none;
+}
+
+.ingred li::before {
+    content: "• ";
+    color: hsl(14, 45%, 36%);
+    font-weight: bold; 
+    padding-right: 30px;
+}
+
+.instruct li::before {
+    content: counter(list-item) ".";
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    padding-right: 30px; 
 }
