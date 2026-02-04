@@ -115,8 +115,19 @@ h2 {
    font-weight: 600; 
 }
 
+
 table {
-    margin: 0 35px;
+  border-collapse: collapse;
+  border: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+tbody {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 35px;
 }
 
 td {
@@ -124,8 +135,11 @@ td {
    font-family: "Outfit", sans-serif;
    font-optical-sizing: auto;
    font-style: normal;
-   border: 1px solid red;
-
+   width: 50%;
+   display: flex;
+   justify-content: left;
+   margin-left: 30px;
+   
 }
 
 tr span {
@@ -136,10 +150,11 @@ tr span {
 
 th {
     color: hsl(30, 10%, 34%);
-    border: 1px solid red;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    width: 50%;
+    margin-left: 30px;
 }
 
 caption {
